@@ -1,3 +1,4 @@
+# НЕ ПОЛНОЕ РЕШЕНИЕ
 def solve(s):
     n = len(s)
     dp = [[0] * n for _ in range(n)]
@@ -11,7 +12,6 @@ def solve(s):
                 dp[start][end] = 1 + min(dp[start][end - 1], dp[start + 1][end])
 
     return dp[0][n - 1]
-# НЕ РАБОЧИЙ КОД
 
 with open('input.txt', 'r') as file:
     s = file.readline().strip()

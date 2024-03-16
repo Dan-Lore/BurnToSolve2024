@@ -1,4 +1,4 @@
-# НЕ РАБОЧИЙ КОД
+# НЕ ПОЛНОЕ РЕШЕНИЕ
 with open('discount.in', 'r') as f:
     buck_len = int(f.readline().strip())
 

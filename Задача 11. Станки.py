@@ -1,3 +1,4 @@
+# НЕ ПОЛНОЕ РЕШЕНИЕ
 with open('input.in', 'r') as f:
     n = int(f.readline().strip())
     prod = [0] * n
