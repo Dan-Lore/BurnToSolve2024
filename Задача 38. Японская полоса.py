@@ -1,4 +1,3 @@
-# НЕ ПОЛНОЕ РЕШЕНИЕ
 from math import factorial
 
 i = open("in.txt", "r")
@@ -16,9 +15,10 @@ else:
         a = int(i.readline())
         kod_len += a
 
-    free_cells = all_cells - kod_len + 1
+    free_cells = max(1, all_cells - kod_len + 1)
+    locked_cells = max(1, free_cells - k)
 
-    ans = factorial(free_cells) // factorial(free_cells - k) // factorial(k)
+    ans = factorial(free_cells) // factorial(locked_cells) // factorial(k)
     o.write(str(ans))
 
 i.close()
